@@ -1,4 +1,4 @@
-Feature: Open OrangeHRM End to End
+Feature: Test gozayaan Website 
 
 Background: Visit Website
      Given Open Browser and Visit Website

@@ -11,5 +11,13 @@ class locatorsPage {
   khulna = "(//span[contains(text(),'Khulna')])[1]"
   show_more = "//span[@class='long']"
   Eco_tour = "//small[normalize-space()='Eco Tours']"
+
+
+  tour_visa = "//span[@class='product'][normalize-space()='Visa']"
+  serch_option_visa ="(//span[@class='label'])[1]"
+  select_india = "//div[@class='name'][normalize-space()='India']"
+  visa_page="//strong[normalize-space()='Summary']"
+  summary="//strong[normalize-space()='Summary']"
+  one_way="//span[normalize-space()='One Way']"
 }
 export default locatorsPage;

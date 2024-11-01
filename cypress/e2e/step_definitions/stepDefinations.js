@@ -23,6 +23,17 @@ When('Check that Region bangladesh is selected', () => {
 Then('Check that currency is BDT selected', ()=> {
     cy.xpath(locator.currency).should('be.visible'); 
   });
+When('Click that Search Button', () => {
+    cy.wait(2000);
+    cy.xpath(locator.search_button).click()
+
+});
+
+Then('Check that Flight search results show properly', ()=> {
+        cy.wait(2000);
+        cy.xpath(locator.one_way).should('be.visible');
+        cy.wait(2000); 
+    });
 
 
 When('Select Tour option', () => {
@@ -41,7 +52,7 @@ Then('Search with Sundarbans',  ()=> {
     cy.wait(2000)
    });
 
-Then('Check that all location is Khulna', () => {
+Then('Check that search results page show properly', () => {
     cy.wait(3000);
     cy.xpath(locator.khulna).should('be.visible')
      
@@ -54,3 +65,39 @@ When('Select Tag Eco Tours', () => {
         cy.xpath(locator.Eco_tour).click()
         cy.wait(2000);
         });
+
+
+When('Select Visa option', () => {
+    cy.wait(3000);
+    cy.xpath(locator.tour_visa).click()
+
+});
+
+
+
+Then('Search with India', () => {
+    cy.wait(1000);
+    cy.xpath(locator.serch_option_visa).click()
+    cy.xpath(locator.search_input).type('India')
+    cy.xpath(locator.select_india).click()
+    cy.wait(1000);
+    cy.xpath(locator.search_button).click()
+    cy.wait(2000)
+
+});
+
+
+Then('Check that Visa search page show properly', () => {
+        cy.wait(3000);
+        cy.xpath(locator.visa_page).should('be.visible')
+    
+});
+
+
+
+
+When('Select Summary show properly', () => {
+    cy.wait(3000);
+    cy.xpath(locator.summary).should('be.visible')
+        
+    });

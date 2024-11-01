@@ -7,20 +7,26 @@ Background: Visit Website
      When Check that Region bangladesh is selected
      Then Check that currency is BDT selected
 
+ Scenario:Verify Flight Defult search work properly 
+     When Click that Search Button
+     Then Check that Flight search results show properly
+
  Scenario: Verify that Select option Tour & search with Sundarbans work properly
      When Select Tour option 
      Then Search with Sundarbans
 
- Scenario: Verify that  Verify all the search results has locaton Khulna
+ Scenario: Verify that the search results page show properly
      When Select Tour option 
      Then Search with Sundarbans
-     Then Check that all location is Khulna 
+     Then Check that search results page show properly
      When Select Tag Eco Tours
-    #  Then From the filtered results click on the first one & verify if the iƟnerary covers all 3 meals in all  the days
-    #  When Fill up the Get Free Tour ConsultaƟon with dummy details & verify confirmaƟon message
 
+Scenario: Search Tourist Visa For India
+     When Select Visa option 
+     Then Search with India
+     Then Check that Visa search page show properly
+     When Select Summary show properly
 
-  
 
 
 

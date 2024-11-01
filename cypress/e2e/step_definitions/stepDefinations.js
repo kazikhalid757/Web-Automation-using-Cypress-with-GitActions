@@ -7,7 +7,9 @@ const locator = new locatorsPage();
 const data = new allData();
 
 Given('Open Browser and Visit Website',()=> {
+    cy.wait(2000);
     cy.visit(data.gozayaan_url);
+    cy.wait(2000);
     });
 
     
@@ -21,6 +23,7 @@ When('Check that Region bangladesh is selected', () => {
 
 
 Then('Check that currency is BDT selected', ()=> {
+    cy.wait(2000);
     cy.xpath(locator.currency).should('be.visible'); 
   });
 When('Click that Search Button', () => {

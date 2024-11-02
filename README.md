@@ -138,5 +138,5 @@ Contributions are welcome! Please open an issue first to discuss any major chang
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
-
+### GitActions CI Integration Faild because the Gozayaan website has Cloudflare protection when tested in headless Cloudflare blocks the website. You can check screenshots or videos of Git Actions.
 With this `README.md`, you can easily set up and run the project, understand the CI/CD setup, and leverage artifacts for detailed test results. Let me know if you need further customization!
